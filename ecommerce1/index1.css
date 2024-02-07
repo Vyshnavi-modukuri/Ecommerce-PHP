@@ -1,0 +1,432 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28-Aug-2023, 12:28:00 pm
+    Author     : Vyshnavi
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display:flex;
+    flex-direction:row;
+    
+  }
+  
+  .items-center{
+    align-items:center;
+  } 
+  
+  .justify-center{
+    justify-content: center;
+  }
+  
+  .space-between{
+    justify-content: space-between;
+  }
+  
+  .uppercase{
+    text-transform: uppercase;
+  }
+  
+  .semibold{
+    font-weight: bolder;
+  }
+  
+  .mx-2{
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  
+  .my-2{
+    margin: 12px 0;
+  }
+  
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+  
+header{
+  position: sticky;
+  top: 0;
+  background: rgb(223, 222, 222);
+  height: 66px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.text-size{
+  font-size: medium;
+}
+.rightBox{
+    display: flex;
+    margin: 12px;
+  }
+
+.left img{
+  width: 32px;
+  height: 23px;
+}
+
+.container{ 
+  padding: 0vw;
+  margin-bottom: 2px;
+}
+
+/*    .containerHeader{
+        padding-bottom: 3px;
+        
+    }*/
+
+nav{
+  font-size: 12px;
+  padding-top: 14px;
+  top: 0;
+  left: 0;
+}
+
+nav ul li{
+  list-style: none;
+  font-size: 50vw;
+  
+}
+
+.section1{
+  background: #f2f2f2; 
+  gap:4px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.section2{
+    background: #f2f2f2;
+    padding:4px;
+    margin:10px;
+
+}
+
+.search{
+  width: 20vw;
+    padding: 7px 17px;
+    border: 0.5px solid grey;
+    background: #f7f8fd;
+    border-radius: 5px;
+}
+
+.homeImg{
+  width: 80vw;
+  margin: 12px 0;
+}
+
+.itemImg{
+  width: 200px;
+  height:200px;
+  margin: 6px 12px;
+}
+
+footer{
+  padding: 23px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.tall{
+  min-height: 40vh;
+}
+
+@media (max-width: 450px) { 
+    .search {
+        width: 72vw; 
+    }
+}
+
+@media (max-width: 1550px) { 
+
+  nav ul li {
+    list-style: none;
+    padding: 0 4px;
+    font-size: 10px;
+}
+  
+
+  .containerHeader {
+    padding: 0 2vw;
+}
+  
+ 
+
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right{ 
+    flex-direction: row;
+  }
+
+  .rightBox{
+    display: flex;
+    margin: 12px;
+  }
+}
+
+/*slideshow start */
+
+.mySlides {
+  display: none;
+  width:max-content;
+  width:100%;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+
+position: relative;
+margin: auto;
+}
+
+/* Caption text */
+.text {
+color: #000000;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+height: 10px;
+width: 10px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 5s;
+}
+
+@keyframes fade {
+from {opacity: .7} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
+/* end of slideshoe*/
+
+/*pick your flavor*/
+
+.gifts-container{
+  display:flex;
+  flex: column;
+}
+.shop-category-container{
+  background-color:rgb(151, 150, 150);
+  gap: 100px;
+}
+.set-container{
+  display:flex;
+  flex:column;
+  align-items: center;
+  justify-content: center;
+}
+.inside-category{
+  background-color: white;
+  margin:5px;
+  margin-top:25px;
+  margin-right:20px;
+  margin-bottom: 10px;
+  transition: transform 0.5s;
+  border-radius:20px;
+}
+.inside-category:hover{
+  transform: scale(0.9);
+}
+.see_more{
+  text-decoration-line: none;
+  color:#007185;
+  
+}
+
+/* footer*/
+/* Set a minimum height for the footer */
+footer {
+  background-color: #f2e8e8;
+  color: #080707;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 150px;
+  height:150px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #111010;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-links {
+      margin-top: 15px;
+  }
+
+  .footer-social {
+      margin-top: 15px;
+  }
+}
+
+#submenu{
+  left:0;
+  right:0;
+  position:absolute;
+  top:35px;
+  visibility:hidden;
+  z-index:1;
+}
+#submenu li{
+ float:none;
+ width:100%; 
+}
+
+#submenu a:hover{
+  background:#fff;
+}
+li:hover ul#submenu{
+  opacity:1;
+  top:80px;
+  visibility:visible;
+}
+
+/*other product pages*/
+.menu {
+  padding: 75px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+
+}
+
+.menu-item {
+  border: 2px solid #e7694d;
+  padding: 7px;
+  background-color: #ebf5f5d4;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Soft box shadow */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transitions */
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Lift the item slightly on hover */
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced box shadow on hover */
+}
+
+.menu-item img {
+  width: 75%;
+  margin-bottom: 10px;
+  border-radius: 4px; /* Add a slight border radius to images */
+}
+
+.menu-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333; /* Darken the heading color */
+}
+
+.menu-item p {
+  font-size: 16px;
+  color: #777777; /* Slightly lighter text color */
+  margin-bottom: 10px;
+}
+
+.menu-item .price {
+  display: block;
+  font-size: 20px;
+  color: #0e0301;
+  font-weight: bold;
+  margin-top: 15px; /* Add some space between text and price */
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #0e0000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+  font-size: 20px;
+  font-weight: 300;
+}
+.buy{
+    background-color: orangered;
+    border-radius: 5px;
+    height: 50px;
+    width:100px;
+}
